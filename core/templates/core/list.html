@@ -1,0 +1,41 @@
+<!DOCTIPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Годный винегрет</title>
+	</head>
+
+	<body style = "background-color: #000000">
+		<div style = "background-color: #FFFFFF">
+			<h1><a href = "#">Рецепт годного винегрета.</a></h1>
+			<p><big>Сегодня, друзья, мы узнаем как приготовить самый годный винегрет во вселенной!</big></p>
+			<p><pre><small>===========
+[<em>Ух</em>       ]
+[<em>суппер</em>   ]
+[<em>годный</em>   ]
+[<em>винегрет!</em>]
+===========</small></pre></p>
+			</div>
+			<div style = "background-color: #C0C0C0">
+			<hr>
+			</div>
+			<div style = "background-color: #FFFFFF">
+			<h3>Нам понадобится:</h3>
+			<ul>
+			<li>Оурец-штаны-медведь</li>
+			<li>6 ингридиентов бесконечности</li>
+			<li>ловушка Джокера</li>
+			<li>Невероятно большая кастрюля вмещающая +100500 лысых азиатов</li>
+			<li>Бабка Фроста</li>
+			</ul>
+			</div>
+			
+			<ul>
+			{% for item in ctx %}
+				<li><a href = "{% url 'detail' item.id %}">{{ item.title }}</a></li>
+			{% endfor %}
+			</ul>
+		
+
+
+</html>
